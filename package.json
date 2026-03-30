@@ -8,6 +8,7 @@
   "files": [
     "skills",
     "scripts/install.js",
+    "templates/mcp.json",
     "README.md"
   ],
   "keywords": [

@@ -14,6 +14,9 @@ Thumbs.db
 # Local test/install output
 .tmp-install-test/
 .cursor/
+mcp.json
+.env
+.env.local
 
 # Optional build artifacts
 dist/
