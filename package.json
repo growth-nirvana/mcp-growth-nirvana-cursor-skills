@@ -1,0 +1,20 @@
+{
+  "name": "@growthnirvana/skills",
+  "version": "1.0.0",
+  "description": "Installable Growth Nirvana Cursor skills pack.",
+  "bin": {
+    "gn-skills": "./scripts/install.js"
+  },
+  "files": [
+    "skills",
+    "scripts/install.js",
+    "README.md"
+  ],
+  "keywords": [
+    "cursor",
+    "skills",
+    "growthnirvana",
+    "mcp"
+  ],
+  "license": "UNLICENSED"
+}
