@@ -2,14 +2,32 @@
   "name": "@growthnirvana/skills",
   "version": "1.0.0",
   "description": "Installable Growth Nirvana Cursor skills pack.",
+  "type": "commonjs",
   "bin": {
     "gn-skills": "./scripts/install.js"
   },
+  "main": "scripts/install.js",
+  "engines": {
+    "node": ">=18"
+  },
+  "publishConfig": {
+    "access": "public"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/growth-nirvana/mcp-growth-nirvana-cursor-skills.git"
+  },
+  "bugs": {
+    "url": "https://github.com/growth-nirvana/mcp-growth-nirvana-cursor-skills/issues"
+  },
+  "homepage": "https://github.com/growth-nirvana/mcp-growth-nirvana-cursor-skills#readme",
   "files": [
     "skills",
     "scripts/install.js",
     "templates/mcp.json",
-    "README.md"
+    "README.md",
+    "CHANGELOG.md",
+    "LICENSE"
   ],
   "keywords": [
     "cursor",
@@ -17,5 +35,5 @@
     "growthnirvana",
     "mcp"
   ],
-  "license": "UNLICENSED"
+  "license": "MIT"
 }

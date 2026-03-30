@@ -123,3 +123,30 @@ node scripts/install.js add
 node scripts/install.js add --global
 node scripts/install.js init-mcp
 ```
+
+## Publishing To npm
+
+1. Login:
+
+```bash
+npm login
+```
+
+2. Verify package contents:
+
+```bash
+npm pack --dry-run
+```
+
+3. Publish:
+
+```bash
+npm publish --access public
+```
+
+4. Validate install:
+
+```bash
+npx @growthnirvana/skills add
+npx @growthnirvana/skills init-mcp
+```
