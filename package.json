@@ -1,6 +1,6 @@
 {
   "name": "@growthnirvana/skills",
-  "version": "1.0.0",
+  "version": "1.2.0",
   "description": "Installable Growth Nirvana Cursor skills pack.",
   "type": "commonjs",
   "bin": {
