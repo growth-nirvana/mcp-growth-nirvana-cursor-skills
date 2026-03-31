@@ -38,10 +38,10 @@ Installing MCP config per project is normal. Use:
 gn-skills init-mcp
 ```
 
-This creates `mcp.json` in your current repository. It uses environment variables for credentials:
+This creates `.cursor/mcp.json` in your current repository. It uses environment variables for credentials and launches `growth-nirvana-mcp-server` via `npx`:
 
 ```json
-"/bin/zsh -lc \"... if [ -z \\\"$GROWTH_NIRVANA_API_KEY\\\" ]; then ...; npx -y @growthnirvana/mcp-server\""
+"/bin/zsh -lc \"... if [ -z \\\"$GROWTH_NIRVANA_API_KEY\\\" ]; then ...; npx -y growth-nirvana-mcp-server\""
 ```
 
 Set your key in either your project `.env.local` (recommended) or shell profile:

@@ -8,7 +8,7 @@ const path = require("path");
 const args = process.argv.slice(2);
 const command = args[0] || "add";
 const packageRoot = path.resolve(__dirname, "..");
-const DEFAULT_MCP_SERVER_PACKAGE = "@growthnirvana/mcp-server";
+const DEFAULT_MCP_SERVER_PACKAGE = "growth-nirvana-mcp-server";
 const MCP_SERVER_PACKAGE_PLACEHOLDER = "__MCP_SERVER_PACKAGE__";
 
 if (command === "--help" || command === "-h" || command === "help") {
@@ -160,7 +160,7 @@ function resolveMcpTargetFile(explicitTarget) {
     return path.resolve(process.cwd(), explicitTarget);
   }
 
-  return path.join(process.cwd(), "mcp.json");
+  return path.join(process.cwd(), ".cursor", "mcp.json");
 }
 
 function getOptionValue(commandArgs, flag) {
@@ -193,5 +193,5 @@ function printHelp() {
   console.log("  --global         (add) install to ~/.cursor/skills");
   console.log("  --target <path>  Install to a custom path");
   console.log("  --force          (init-mcp) overwrite existing target file");
-  console.log("  --pin-server-version <version>  (init-mcp) pin @growthnirvana/mcp-server");
+  console.log("  --pin-server-version <version>  (init-mcp) pin growth-nirvana-mcp-server");
 }
